@@ -3,7 +3,7 @@ from . import forms
 # Create your views here.
 def Register(request):
 
-    form= forms.StudentRegister()
+    #form= forms.StudentRegister()
     if request.method=='POST':
         form= forms.StudentRegister(request.POST)
         if form.is_valid():
