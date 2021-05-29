@@ -17,6 +17,7 @@
     <img src="{% static "sky-828648_1920.jpg"  %}">
         <form method="post">
             {{form.as_p}}
+            {%csrf_token%}
             <input type="submit" value="Register">    
         </form>
     <div>
