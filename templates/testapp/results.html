@@ -15,6 +15,10 @@
     <h1>Django Based Form</h1>
     <div class="container" align= center>
     <img src="{% static "sky-828648_1920.jpg"  %}">
-    <h2>{{form}}</h2>
+        <form method="post">
+            {{form.as_p}}
+            <input type="submit" value="Register">    
+        </form>
+    <div>
 </body>
 </html>
