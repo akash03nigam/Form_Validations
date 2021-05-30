@@ -2,8 +2,9 @@ from django.shortcuts import render
 from . import forms
 # Create your views here.
 def Register(request):
-
-    #form= forms.StudentRegister()
+    if request.method=='GET':
+        form= forms.StudentRegister()
+    #return render(request, 'testapp/results.html', {'form': form})    
     if request.method=='POST':
         form= forms.StudentRegister(request.POST)
         if form.is_valid():
