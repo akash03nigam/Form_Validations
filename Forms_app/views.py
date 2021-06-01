@@ -15,3 +15,6 @@ def Register(request):
             #print("Student Feedback:",form.cleaned_data['Feedback'])
         return render(request, 'testapp/thankyou.html',{'name':form.cleaned_data['Name']})
     return render(request, 'testapp/results.html',{'form': form})
+
+def Temp_Inheritance(request):
+    return render(request, 'testapp/onemore.html')    

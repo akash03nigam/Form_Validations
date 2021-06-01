@@ -20,4 +20,5 @@ from Forms_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('reg/',views.Register),
+    path('g/',views.Temp_Inheritance),
 ]
